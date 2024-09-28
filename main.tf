@@ -45,7 +45,7 @@ module "security_group" {
 module "ec2" {
   source             = "./modules/ec2"
   ami_id             = "ami-0a0e5d9c7acc336f1"
-  key_name           = "dk"
+  key_name           = "Terraform_1"
   public_subnet_id   = module.subnet.public_subnet_id
   private_subnet_id  = module.subnet.private_subnet_id
   public_sg_id = module.security_group.public_sg_id
